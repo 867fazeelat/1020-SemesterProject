@@ -1,0 +1,676 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    background-color: azure; 
+    color: black; 
+    font-family: 'Times New Roman', Times, serif;
+   font-weight: 300;
+   line-height: 1.4;
+   scroll-behavior: smooth;
+   max-width: 1400px;
+   }
+
+   /* Custom CSS */
+.navbar {
+  background-color: rgb(109, 160, 137);
+  color: rgb(225, 230, 235);
+  padding: 7px 2px;
+}
+.container{
+  padding: 0px 2px;
+}
+.left{
+  flex: 1;
+  display: inline-flex;
+position: relative;
+flex-shrink: 0;
+  }
+
+.left img {
+  max-height: 50px;
+  margin-right: 5px;
+}
+
+ .left strong {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  top: 60%;
+  color:rgb(225, 230, 235) ;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none; /* Initially hide menu icon */
+  cursor: pointer;
+}
+
+.menu-icon .line {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff; /* White line color */
+  margin: 5px;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.links a {
+  color: inherit; /* Inherit text color */
+  margin-left: 20px;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: rgba(82, 79, 79, 0.1);
+  color: #060606;
+  transition: background-color 0.3s ease;
+}
+
+.links a:hover{
+  background-color: #e35d0a;
+  color: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Display menu icon on smaller screens */
+  }
+
+  .links {
+    display: none; /* Hide links by default on smaller screens */
+    flex-direction: column; /* Arrange links vertically */
+    position: absolute;
+    top: 100%; /* Position dropdown below navbar */
+    left: 0;
+    background-color: rgb(109, 160, 137);
+    color: rgb(225, 230, 235);
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .links.show {
+    display: flex; /* Display links when menu icon is clicked */
+  }
+}
+
+
+ 
+
+  /* SECTION */
+  section{
+    margin-top: 5px;
+    position: relative;
+    height: 538px;
+    align-items: flex-start;
+    text-align: center;
+    justify-content: center; 
+    display: flex;
+    flex-direction: column;
+    background-image: url("/Images/Side1.jpg");
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+}
+ .head h1,h2{
+    background-color: rgba(246, 250, 249, 0);
+    padding: 10px 30px 10px 30px;
+    margin-left: 10%;
+} 
+ .head h1 {
+    color: rgb(240, 6, 6);
+    font-size: 45px;
+    top: 56%;
+    z-index: 1;
+    line-height: 38px;
+}
+.head h1 span{
+  color: rgb(7, 235, 231);
+}
+.head h2{
+    color: rgb(240, 6, 6);
+    font-size: 25px;
+    font-style: italic;
+    top: 80%;
+    margin-top: 10px;
+    z-index: 1;
+    line-height: 30px;
+}
+article{
+    font-size: 22px;
+    color: rgb(7, 235, 231);
+    font-style: normal;
+}
+.customB{
+  background-color: rgb(4, 59, 62);
+  color: bisque;
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 12px;
+  padding: 15px 13px 10px 13px;
+  border: 1px solid;
+  box-shadow: 0px 2px 3px white;
+  margin-top: 20px;
+}
+.customB:hover{
+  background-color: bisque;
+  color: black;
+}  
+
+  @media screen and (max-width: 768px){
+    section{
+      align-items: center;
+    }
+    .head h1 h2{
+      padding: 10px 10px 10px 10px;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    .head h1{
+        font-size: 20px;
+        margin-top: 60px;
+        margin-bottom: 15px;
+        line-height: 20px;
+    }
+    .head h2{
+      margin-top: 30px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .head h2 article{
+        font-size: 11px; 
+        text-align: center;
+    }
+    .head{
+        padding: 5px 15px 5px 15px;
+    }
+    .customB{
+      font-size: 16px;
+      padding: 6px 9px 6px 9px;
+    }
+  }
+
+
+  /* THIRD PART */
+  .FoodItems{
+    margin: 5px 0;
+    padding: 20px 0;
+     display: flex;
+      justify-content: space-around;
+     align-items: flex-start; 
+     flex-wrap: wrap;
+    box-shadow: 0px 5px 4px rgb(90, 88, 80);
+    border: 1px solid rgb(214, 212, 203); ;
+    background-color: rgb(211, 208, 205);
+    }
+    .FItems{
+     text-align: center;
+     width: 250px;
+     padding: 30px;
+     margin-bottom: 60px;
+    }
+    .FIButton{
+     position: fixed;
+    bottom: 10px;
+    margin-top: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    
+    }
+
+    .FItems p{
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    }
+    .FItems h1{
+      margin-top: 35px;
+      order: -1;
+    line-height: 34px;
+    font-size: 40px;
+    }
+    
+    .FoodItems img{
+      width: 180px;
+      height: 180px;
+      margin-bottom: 15px;  
+      object-fit: cover;
+    } 
+
+    @media only screen and(max-width: 768px){
+      .FoodItems{
+         flex-direction: column; 
+      } 
+      .FItems h1{
+        line-height:20px ;
+        text-align: center;
+      }
+      .FItems img{
+        max-width: 80%;
+        margin-top: 12px;
+      }
+       .FIButton{
+       bottom: 40px;
+      } 
+    }
+
+    /* FIFTH PART */
+    .Favourites{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      background-color:rgb(211, 208, 205);
+    }
+    .Favourites .FHead{
+      text-align: center;
+      width: 450px;
+      margin-bottom: 10px;
+      margin-top: 15px;
+    }
+
+    .Favourites .FHead h3{
+      font-size: 30px;
+      padding: 12px 0;
+    }
+    .Favourites .FHead p{
+      font-size: 14px;
+      text-align: center;
+    }
+    .FFood{
+      margin: 30px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      width: 90%;
+     
+    }
+    .FFood .Items{
+       background-color: rgb(109, 160, 137);
+      border-radius: 5px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px black;
+      width: 220px;
+      padding: 15px;
+      padding-top: 20px;
+      text-align: center;
+      cursor: pointer;
+     display: inline-flex;
+    }
+    .FFood .Items div {
+      height: 270px;
+      margin-bottom: 15px;
+    }
+    .FFood .Items div p{
+      line-height: 15px;
+    }
+    .FFood .Items div .Price{
+      color: rgb(244, 246, 244);
+      font-weight: bold;
+    }
+    .FFood .Items img{
+      width: 160px;
+     margin-bottom: 15px;
+    }
+
+    .Favourites .Design{
+      background-color: bisque;
+      height: 50%;
+      width: 100%;
+      position: absolute;
+      z-index: -1;
+      bottom: 0;
+      border-radius: 10px;
+    }
+
+
+/* FOURTH PART */
+.PChoose{
+margin: 7px 0;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+}
+.foodimg{
+  flex: 0.5;
+}
+.foodimg img{
+  max-width: 500px;
+  width: 45vw;
+}
+.Q{
+flex: 0.5;
+flex-direction: column;
+margin-left: 40px;
+}
+.Q h2{
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.Ans{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.Ans img{
+  width: 45px;
+}
+.Ans div:first-child{
+padding: 10px;
+border-radius: 50%;
+height: 65px;
+text-align: center;
+background-color: rgb(4, 59, 62);
+margin-right: 20px;
+}
+.Ans div:nth-child(2){
+display: flex;
+flex-direction: column;
+}
+.Ans div:nth-child(2) p{
+margin-top: 10px;
+font-size: 13px;
+}
+
+@media screen and (max-width: 768px){
+ .foodimg{
+  flex: 1;
+  text-align: center;
+  margin-bottom: 20px;
+ } 
+
+ .foodimg img{
+  width: 70vw;
+ }
+ .Q{
+  flex: 1;
+  margin-top: 30px;
+ }
+ .Q h2{
+  font-size: 25px;
+ }
+ .Ans div:nth-child(2) p{
+  font-size: 11px;
+ }
+}
+
+    
+
+    /* FEEDBACK */
+.Kitchen{
+  margin: 5px 0;
+  display: flex;
+}
+.Kitchen .Feed{
+flex: 0.5;
+padding-top: 40px;
+margin-left: 80px;
+margin-top: 70px;
+}
+    
+
+.Kitchen .Feed h2{
+  font-size: 32px;
+}
+.Kitchen .Feed p{
+  font-size: 18px;
+  color: rgb(9, 99, 99);
+}
+.Kitchen .CD{
+display: flex;
+align-items: center;
+}
+.Kitchen .CD h4{
+  font-size: 16px;
+}
+.Kitchen .CD p{
+  font-size: 14px;
+  color:rgb(16, 96, 79) ;
+}
+.Kitchen .CD .T{
+ padding-left: 10px;
+ padding-top: 10px;
+ line-height: 0.3;
+}
+.Kitchen .CD img{
+  width: 50px;
+  border-radius: 50%;
+  border: 4px solid cornflowerblue;
+}
+
+ .Kitchen .chef{
+  flex: 0.5;
+  text-align: right;
+  margin-bottom: 10px;
+  margin-right: 10px;
+} 
+
+.Kitchen img{
+  margin-top: 13px;
+  width: 34vw;
+  max-width: 450px;
+}
+
+@media only screen and (max-width: 768px){
+ .Kitchen .Feed{
+  flex: 1;
+  }
+  .Kitchen .Feed p{
+    text-align: center;
+    font-size: 12px;
+  }
+  .Kitchen .chef{
+    flex: 1;
+  }
+}
+
+.footer{
+  padding: 5px 0;
+  border-top: 2px solid color rgb(63, 208, 63);
+  background-color: rgb(109, 160, 137);
+  height: 62px;
+}
+
+ p{
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px;
+  color: black;
+  text-align: start;
+  margin-left: 20px;
+}
+.footer .Logos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-right: 20px;
+}
+
+
+/* Reservation form */
+.reservation-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-image: url(/Images/BG1.jpg);
+  color: #faf7f7;
+  align-items: center;
+  }
+
+.reservation-form h2 {
+  text-align: center;
+}
+
+.reservation-form label {
+  text-align: center;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+
+.reservation-form input[type="text"],
+.reservation-form input[type="email"],
+.reservation-form input[type="date"],
+.reservation-form input[type="time"],
+.reservation-form input[type="number"],
+.reservation-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.reservation-form button {
+  background-color: #36715e;
+  color: white;
+  cursor: pointer;
+  width: 120px;
+  padding-bottom: 2px;
+}
+
+.reservation-form button:hover {
+  background-color: #e35d0a;
+}
+
+/* Navigation bar */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #f2f2f2;
+}
+
+
+/* SIGN UP FORM */
+.SignUp-Form{
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-image: url(/Images/BG1.jpg);
+  color: #faf7f7;
+  align-items: center;
+  }
+
+.SignUp-Form h2 {
+  text-align: center;
+}
+
+.SignUp-Form label {
+  text-align: center;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+
+.SignUp-Form input[type="text"],
+.SignUp-Form input[type="email"],
+.SignUp-Form input[type="password"],
+.SignUp-Form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.SignUp-Form button {
+  background-color: #36715e;
+  color: white;
+  cursor: pointer;
+  width: 120px;
+  padding-bottom: 2px;
+}
+
+.SignUp-Form button:hover {
+  background-color: #e35d0a;
+}
+
+.SignUp Form footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+
+/* SIGN In FORM */
+.SignIn-Form{
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-image: url(/Images/BG1.jpg);
+  color: #faf7f7;
+  align-items: center;
+  }
+
+.SignIn-Form h2 {
+  text-align: center;
+}
+
+.SignIn-Form label {
+  text-align: center;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+
+.SignIn-Form input[type="email"],
+.SignIn-Form input[type="password"],
+.SignIn-Form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.SignIn-Form button {
+  background-color: #36715e;
+  color: white;
+  cursor: pointer;
+  width: 120px;
+  padding-bottom: 2px;
+}
+
+.SignIn-Form button:hover {
+  background-color: #e35d0a;
+}
